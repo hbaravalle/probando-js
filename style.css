@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+}
+
+#listado-de-personajes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #444;
+  color: #fff;
+}
+.card img {
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.card .text-wrapper {
+  padding: 10px 25px;
+}
+
+.card .text-wrapper h2 {
+}
+
+.card .text-wrapper h3 {
+}
+
+.card .text-wrapper p {
+}
+
+@media screen and (max-width: 800px) {
+  #listado-de-personajes {
+    grid-template-columns: 1fr;
+  }
+}
